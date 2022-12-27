@@ -1,0 +1,11 @@
+piVersion: 
+kind: Pod
+metadata:
+    name: utrains
+        namespace: geolocation
+            labels:
+                 app: utrains
+                 spec:
+                     containers:
+                           - name: utrains-app
+                                   image

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cnt-service
+  namespace: dev
+spec:
+  selector:
+    app: cnt-app
+  type: LoadBalancer # Loadbalancer (puplic)can be clusterIP(internal) or NodePort(specific port)
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 80
+      nodePort: 30468
